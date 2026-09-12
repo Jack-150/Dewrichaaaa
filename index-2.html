@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Birthday</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Griffy&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="scene">
+
+  <!-- Night sky + skyline background -->
+  <div class="sky">
+    <div class="stars"></div>
+    <div class="moon"></div>
+    <svg class="skyline" viewBox="0 0 800 260" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"></svg>
+    <div class="water"></div>
+  </div>
+
+  <!-- Title -->
+  <header class="title-wrap">
+    <h1 class="title">Birthday<span class="cake-emoji" aria-hidden="true">🎂</span></h1>
+  </header>
+
+  <!-- Table + cake + photos stage -->
+  <main class="stage" id="stage">
+
+    <div class="table-wrap">
+      <div class="table">
+        <div class="cloth"></div>
+        <div class="legs">
+          <span></span><span></span><span></span><span></span>
+        </div>
+      </div>
+
+      <!-- Scene 1: cake + photo frames -->
+      <div class="tabletop scene-cake" id="sceneCake">
+        <div class="frame frame-left1">
+          <img src="images/photo1.jpg" alt="">
+        </div>
+        <div class="frame frame-left2">
+          <img src="images/photo2.jpg" alt="">
+        </div>
+
+        <div class="cake-wrap" id="cakeWrap">
+          <div class="candle">
+            <div class="flame" id="flame">
+              <div class="flame-core"></div>
+            </div>
+            <div class="wick"></div>
+          </div>
+          <div class="cake">
+            <div class="tier tier-top"></div>
+            <div class="tier tier-mid"></div>
+            <div class="tier tier-base"></div>
+            <div class="plate"></div>
+          </div>
+        </div>
+
+        <div class="frame frame-right1">
+          <img src="images/photo3.jpg" alt="">
+        </div>
+        <div class="frame frame-right2">
+          <img src="images/photo4.jpg" alt="">
+        </div>
+      </div>
+
+      <!-- Scene 2: card (revealed after candle is blown out) -->
+      <div class="tabletop scene-card" id="sceneCard">
+        <div class="card">
+          <div class="card-art" aria-hidden="true">
+            <svg viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="60" cy="66" r="34" fill="#f6c9c9"/>
+              <circle cx="38" cy="46" r="12" fill="#f6c9c9"/>
+              <circle cx="82" cy="46" r="12" fill="#f6c9c9"/>
+              <circle cx="47" cy="60" r="4.5" fill="#3a2b2b"/>
+              <circle cx="73" cy="60" r="4.5" fill="#3a2b2b"/>
+              <ellipse cx="60" cy="74" rx="7" ry="5" fill="#3a2b2b"/>
+              <path d="M60 8 L52 24 L68 24 Z" fill="#e59a9a"/>
+              <circle cx="60" cy="8" r="3" fill="#e59a9a"/>
+            </svg>
+          </div>
+          <p class="card-heading">HAPPY BIRTHDAY</p>
+        </div>
+      </div>
+    </div>
+
+    <p class="hint" id="hint">press space to blow out the candle</p>
+
+  </main>
+
+</div>
+
+<audio id="bgm" src="audio/birthday-song.mp3" loop preload="auto" playsinline></audio>
+
+<script src="script.js"></script>
+</body>
+</html>

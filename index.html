@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Happy Birthday 🎂</title><link rel="stylesheet" href="style.css"></head>
+<body><div class="page"><div class="stars"></div>
+<h1>Happy Birthday <span>🎂</span></h1>
+<div class="skyline"><div class="moon"></div><div class="buildings">
+<i></i><i></i><i></i><i></i><i></i><i></i><i class="tower"></i><i></i><i></i><i></i></div></div>
+<section class="birthday-scene"><div class="table">
+<div class="photo p1"><img src="images/photo1.jpg"></div><div class="photo p2"><img src="images/photo2.jpg"></div>
+<div class="cake"><div class="flame"></div><div class="candle"></div><div class="icing"></div>
+<div class="cakebody"><b></b><b></b><b></b><b></b></div><div class="plate"></div></div></div>
+<div class="photo-row"><img src="images/photo3.jpg"><img src="images/photo4.jpg"></div></section>
+<section class="message"><div class="message-head"><span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span><strong>Birthday Surprise ❤️</strong></div>
+<div class="message-body"><p>Wishing you a beautiful birthday filled with happiness, smiles and unforgettable moments. ✨</p><p class="love">Happy Birthday! 🎂💖</p></div></section>
+</div>
+<audio id="birthdayMusic" autoplay loop preload="auto" playsinline><source src="audio/birthday-song.mp3" type="audio/mpeg"></audio>
+<script>
+const m=document.getElementById("birthdayMusic");
+function startMusic(){m.play().catch(()=>{});}
+window.addEventListener("load",startMusic);
+document.addEventListener("visibilitychange",()=>{if(!document.hidden)startMusic();});
+</script></body></html>
